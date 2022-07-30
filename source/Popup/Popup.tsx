@@ -2,12 +2,15 @@ import * as React from 'react';
 
 const Popup: React.FC = () => {
   return (
-    <section id="popup" style={{padding: 10, textAlign: 'center'}}>
+    <section
+      id="popup"
+      style={{padding: 10, textAlign: 'center', fontFamily: 'sans-serif'}}
+    >
       <div style={{display: 'inline-block', paddingRight: 5}}>
         <img src="../assets/icons/favicon-48.png" alt="🌈" />
       </div>
-      <p style={{fontSize: 'large'}}>Rainbow States</p>
-      <p style={{fontSize: 'larger'}}>
+      <p style={{fontSize: '14pt'}}>Rainbow States</p>
+      <p style={{fontSize: '10pt'}}>
         🙋‍♂️ Made by{' '}
         <a
           href="https://twitter.com/zaccharles"
