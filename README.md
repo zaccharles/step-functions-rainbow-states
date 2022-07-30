@@ -29,14 +29,13 @@
 
 ## Description
 
-Colors AWS Step Functions states in the Workflow Studio based on their prefix.  
+Larger state machines can be hard to visually navigate. Adding color helps distinguish one group of states from another.
+
+This extension colors states in the AWS Step Functions Workflow Studio based on their name prefix.
 
 For example, `Process Queue: Get Messages` and `Process Queue: Delete Messages` would be the same color.
 
-## Motivation
-State names must be unique within a Step Functions state machine. To avoid naming conflicts in larger state machines, it's common to prefix the names of related states (the CDK provides methods like [`prefixStates`](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_aws-stepfunctions.StateMachineFragment.html#prefixwbrstatesprefix) to make this easy).  
-
-Larger state machines can be hard to visually navigate. Adding color helps distinguish one group of states from another.
+Why prefixes? They're often already there! State names must be unique within a Step Functions state machine. To avoid naming conflicts in larger state machines, it's common to prefix the names of related states (the CDK provides methods like prefixStates to make this easy).
 
 ## Features
 
