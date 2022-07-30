@@ -1,15 +1,14 @@
 {
-  "name": "web-extension-starter",
-  "version": "2.0.0",
-  "description": "Web extension starter using react and typescript",
+  "name": "step-functions-rainbow-states",
+  "version": "0.0.1",
+  "description": "Color AWS Step Functions states",
   "private": true,
-  "repository": "https://github.com/abhijithvijayan/web-extension-starter.git",
+  "repository": "https://github.com/zaccharles/step-functions-rainbow-states.git",
   "author": {
-    "name": "abhijithvijayan",
-    "email": "email@abhijithvijayan.in",
-    "url": "https://abhijithvijayan.in"
+    "name": "zaccharles",
+    "email": "zac@zaccharles.com"
   },
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "engines": {
     "node": ">=10.0.0",
     "yarn": ">= 1.0.0"

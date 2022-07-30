@@ -1,50 +1,37 @@
 import * as React from 'react';
-import {browser, Tabs} from 'webextension-polyfill-ts';
-
-function openWebPage(url: string): Promise<Tabs.Tab> {
-  return browser.tabs.create({url});
-}
 
 const Popup: React.FC = () => {
   return (
-    <section id="popup">
-      <h2>WEB-EXTENSION-STARTER</h2>
-      <button
-        id="options__button"
-        type="button"
-        onClick={(): Promise<Tabs.Tab> => {
-          return openWebPage('options.html');
-        }}
-      >
-        Options Page
-      </button>
+    <section id="popup" style={{padding: 10, textAlign: 'center'}}>
+      <div style={{display: 'inline-block', paddingRight: 5}}>
+        <img src="../assets/icons/favicon-48.png" alt="🌈" />
+      </div>
+      <p style={{fontSize: 'large'}}>Rainbow States</p>
+      <p style={{fontSize: 'larger'}}>
+        🙋‍♂️ Made by{' '}
+        <a
+          href="https://twitter.com/zaccharles"
+          target="_blank"
+          rel="noreferrer"
+          style={{color: '#2874fc'}}
+        >
+          @zaccharles
+        </a>
+      </p>
+      <br />
       <div className="links__holder">
-        <ul>
-          <li>
-            <button
-              type="button"
-              onClick={(): Promise<Tabs.Tab> => {
-                return openWebPage(
-                  'https://github.com/abhijithvijayan/web-extension-starter'
-                );
-              }}
-            >
-              GitHub
-            </button>
-          </li>
-          <li>
-            <button
-              type="button"
-              onClick={(): Promise<Tabs.Tab> => {
-                return openWebPage(
-                  'https://www.buymeacoffee.com/abhijithvijayan'
-                );
-              }}
-            >
-              Buy Me A Coffee
-            </button>
-          </li>
-        </ul>
+        <a
+          href="https://www.buymeacoffee.com/zaccharles"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+            alt="Buy Me A Coffee"
+            height={60}
+            width={217}
+          />
+        </a>
       </div>
     </section>
   );
