@@ -44,7 +44,7 @@ Larger state machines can be hard to visually navigate. Adding color helps disti
  * Support for [AWS Step Functions Workflow Studio]
 
 ## Screenshot
-![Screenshot](./screenshot.png)
+![Screenshot](./screenshot-medium.png)
 
 ## Install
 
