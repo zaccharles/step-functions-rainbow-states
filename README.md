@@ -29,13 +29,14 @@
 
 ## Description
 
-Larger state machines can be hard to visually navigate. Adding color helps distinguish one group of states from another.
-
-This extension colors states in the AWS Step Functions Workflow Studio based on their name prefix.
+Colors AWS Step Functions states in the Workflow Studio based on their prefix.  
 
 For example, `Process Queue: Get Messages` and `Process Queue: Delete Messages` would be the same color.
 
-Why prefixes? They're often already there! State names must be unique within a Step Functions state machine. To avoid naming conflicts in larger state machines, it's common to prefix the names of related states (the CDK provides methods like prefixStates to make this easy).
+## Motivation
+State names must be unique within a Step Functions state machine. To avoid naming conflicts in larger state machines, it's common to prefix the names of related states (the CDK provides methods like [`prefixStates`](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_aws-stepfunctions.StateMachineFragment.html#prefixwbrstatesprefix) to make this easy).  
+
+Larger state machines can be hard to visually navigate. Adding color helps distinguish one group of states from another.
 
 ## Features
 
@@ -47,15 +48,18 @@ Why prefixes? They're often already there! State names must be unique within a S
 
 ## Install
 
-| [![Chrome](https://cdnjs.cloudflare.com/ajax/libs/browser-logos/72.0.0/chrome/chrome_48x48.png)](/) | [![Firefox](https://cdnjs.cloudflare.com/ajax/libs/browser-logos/72.0.0/firefox/firefox_48x48.png)](/) | [![Opera](https://cdnjs.cloudflare.com/ajax/libs/browser-logos/72.0.0/opera/opera_48x48.png)](/) | [![Edge](https://cdnjs.cloudflare.com/ajax/libs/browser-logos/72.0.0/edge/edge_48x48.png)](/) | [![Brave](https://cdnjs.cloudflare.com/ajax/libs/browser-logos/72.0.0/brave/brave_48x48.png)](/) | [![vivaldi](https://cdnjs.cloudflare.com/ajax/libs/browser-logos/72.0.0/vivaldi/vivaldi_48x48.png)](/) |
-| --------------------------------------------------------------------------------------------- |------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| Coming Soon                                                                                  | Coming Soon                                                                                     | Coming Soon                                                                               | Coming Soon                                                                            | Coming Soon                                                                                      | Coming Soon                                                                                         |
+| ![Chrome](https://cdnjs.cloudflare.com/ajax/libs/browser-logos/72.0.0/chrome/chrome_48x48.png)              | ![Firefox](https://cdnjs.cloudflare.com/ajax/libs/browser-logos/72.0.0/firefox/firefox_48x48.png)            | ![Opera](https://cdnjs.cloudflare.com/ajax/libs/browser-logos/72.0.0/opera/opera_48x48.png)                 | ![Edge](https://cdnjs.cloudflare.com/ajax/libs/browser-logos/72.0.0/edge/edge_48x48.png)                    | ![Brave](https://cdnjs.cloudflare.com/ajax/libs/browser-logos/72.0.0/brave/brave_48x48.png)                 | ![vivaldi](https://cdnjs.cloudflare.com/ajax/libs/browser-logos/72.0.0/vivaldi/vivaldi_48x48.png)           |
+|:-----------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------:|
+| Chrome                                                                                                      | Firefox                                                                                                      | Opera                                                                                                       | Edge                                                                                                        | Brave                                                                                                       | Vivaldi                                                                                                     |
+| [Download](https://github.com/zaccharles/step-functions-rainbow-states/releases/download/v0.0.1/chrome.zip) | [Download](https://github.com/zaccharles/step-functions-rainbow-states/releases/download/v0.0.1/firefox.zip) | [Download](https://github.com/zaccharles/step-functions-rainbow-states/releases/download/v0.0.1/chrome.zip) | [Download](https://github.com/zaccharles/step-functions-rainbow-states/releases/download/v0.0.1/chrome.zip) | [Download](https://github.com/zaccharles/step-functions-rainbow-states/releases/download/v0.0.1/chrome.zip) | [Download](https://github.com/zaccharles/step-functions-rainbow-states/releases/download/v0.0.1/chrome.zip) |
+| Chrome Web Store (_Coming Soon_)                                                                            | Add-ons for Firefox (_Coming Soon_)                                                                          | Opera add-ons (_Coming Soon_)                                                                               | Chrome Web Store (_Coming Soon_)                                                                            | Chrome Web Store (_Coming Soon_)                                                                            | Chrome Web Store (_Coming Soon_)                                                                            |
+
 
 ## Bugs
 
 Please file an issue [here](https://github.com/zaccharles/step-functions-rainbow-states/issues/new) for bugs, missing documentation, or unexpected behavior.
 
-## Attribution
+## Thanks
 
 Extension template [web-extension-starter](https://github.com/zaccharles/step-functions-rainbow-states) by abhijithvijayan  
 Rainbow icons created by [kosonicon - Flaticon](https://www.flaticon.com/free-icons/rainbow)
