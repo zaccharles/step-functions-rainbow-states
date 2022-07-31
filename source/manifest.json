@@ -12,7 +12,7 @@
   },
   "description": "Color AWS Step Functions states",
   "homepage_url": "https://github.com/zaccharles/step-functions-rainbow-states",
-  "short_name": "Rainbow States",
+  "short_name": "RainbowState",
 
   "__chrome|opera|edge__host_permissions": [
     "*://*.console.aws.amazon.com/states/*"
