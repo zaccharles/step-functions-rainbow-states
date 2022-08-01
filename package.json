@@ -1,6 +1,6 @@
 {
   "name": "step-functions-rainbow-states",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Color AWS Step Functions states",
   "private": true,
   "repository": "https://github.com/zaccharles/step-functions-rainbow-states.git",
