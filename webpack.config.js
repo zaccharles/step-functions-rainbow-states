@@ -25,8 +25,8 @@ const extensionReloaderPlugin =
         entries: {
           // TODO: reload manifest on update
           contentScript: 'contentScript',
-          background: 'background',
-          extensionPage: ['popup', 'options'],
+          // background: 'background',
+          extensionPage: ['popup' /* 'options' */],
         },
       })
     : () => {
@@ -59,10 +59,10 @@ module.exports = {
 
   entry: {
     manifest: path.join(sourcePath, 'manifest.json'),
-    background: path.join(sourcePath, 'Background', 'index.ts'),
+    // background: path.join(sourcePath, 'Background', 'index.ts'),
     contentScript: path.join(sourcePath, 'ContentScript', 'index.ts'),
     popup: path.join(sourcePath, 'Popup', 'index.tsx'),
-    options: path.join(sourcePath, 'Options', 'index.tsx'),
+    // options: path.join(sourcePath, 'Options', 'index.tsx'),
   },
 
   output: {
@@ -157,13 +157,13 @@ module.exports = {
       hash: true,
       filename: 'popup.html',
     }),
-    new HtmlWebpackPlugin({
-      template: path.join(viewsPath, 'options.html'),
-      inject: 'body',
-      chunks: ['options'],
-      hash: true,
-      filename: 'options.html',
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: path.join(viewsPath, 'options.html'),
+    //   inject: 'body',
+    //   chunks: ['options'],
+    //   hash: true,
+    //   filename: 'options.html',
+    // }),
     // write css file(s) to build folder
     new MiniCssExtractPlugin({filename: 'css/[name].css'}),
     // copy static assets

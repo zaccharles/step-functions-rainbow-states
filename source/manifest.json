@@ -8,6 +8,7 @@
     "16": "assets/icons/favicon-16.png",
     "32": "assets/icons/favicon-32.png",
     "48": "assets/icons/favicon-48.png",
+    "64": "assets/icons/favicon-64.png",
     "128": "assets/icons/favicon-128.png"
   },
   "description": "Color AWS Step Functions states",
